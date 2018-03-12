@@ -7,7 +7,4 @@ public class JetImpl extends Jet {
 		// TODO Auto-generated constructor stub
 	}
 
-	
-	
-
 }

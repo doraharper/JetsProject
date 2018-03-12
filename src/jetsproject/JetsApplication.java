@@ -14,17 +14,16 @@ public class JetsApplication {
 		String menuArray[] = { "1. List Fleet", "2. Fly all jets", "3. View fastest jet",
 				"4. View jet with longest range", "5. Load all Cargo Jets", "6. Dogfight!", "7. Add a jet to Fleet",
 				"8. Quit" };
-	//	System.out.println("Choose from the following: \n");
-		
-		
+		// System.out.println("Choose from the following: \n");
+
 		do {
 			System.out.println("Choose from the following: \n");
 
 			for (int i = 0; i < menuArray.length; i++) {
 				System.out.println(menuArray[i]);
-		} 
+			}
 			choice = sc.nextInt();
-			
+
 			switch (choice) {
 			case 1:
 				af.listJets();
@@ -39,10 +38,10 @@ public class JetsApplication {
 				af.getLongestRange();
 				break;
 			case 5:
-				System.out.println();
+				
 				break;
 			case 6:
-				System.out.println();
+				
 				break;
 			case 7:
 				af.addJet();
@@ -50,9 +49,11 @@ public class JetsApplication {
 			case 8:
 				break;
 			}
-		
+
 		} while (choice != 8);
 		System.out.println("Bye!!");
+		
+		sc.close();
 	}
 
 }

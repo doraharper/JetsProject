@@ -16,12 +16,12 @@ public abstract class Jet {
 	}
 
 	public void fly() {
-		double flyTime = range/speed; 
-		
-		
-		System.out.println("Model: "+ model+" \tSpeed: " + speed+ "\tRange: " + range + "\tPrice: " + price +"." );
-		System.out.println("Hours of fly time while going at maximum speed before running out of fuel: "+ flyTime+ "\n");
-		
+		double flyTime = range / speed;
+
+		System.out.println("Model: " + model + " \tSpeed: " + speed + "\tRange: " + range + "\tPrice: " + price + ".");
+		System.out.println(
+				"Hours of fly time while going at maximum speed before running out of fuel: " + flyTime + "\n");
+
 	}
 
 	public double getSpeedInMach() {

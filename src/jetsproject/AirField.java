@@ -79,13 +79,27 @@ public class AirField {
 		System.out.println("Type aircraft model: ");
 		String model = sc.next();
 
-		// Jet j = new JetImpl(model, speed, range, price);
-		//
-		// for (int i = 0; i < jets.length; i++) {
-		// if(jets[i]==null) {
-		// jets[i] = j;
-		// break;
-		// }
-	}
+		System.out.println("Type aircraft speed: ");
+		double speed = sc.nextDouble();
 
+		System.out.println("Type aircraft range: ");
+		int range = sc.nextInt();
+
+		System.out.println("Type aircraft price: ");
+		long price = sc.nextLong();
+
+		Jet j = new JetImpl(model, speed, range, price);
+
+		for (int i = 0; i < jets.length; i++) {
+
+			if (jets[i] == null) {
+
+				jets[i] = j;
+
+				break;
+			}
+		}
+	
+	
+	}
 }
